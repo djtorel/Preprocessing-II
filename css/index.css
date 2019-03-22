@@ -335,6 +335,7 @@ img {
   background-color: #008080;
   color: white;
   border-radius: 1.25rem;
+  cursor: pointer;
 }
 @media (max-width: 500px) {
   .home .content-pick {
@@ -354,5 +355,6 @@ img {
     background-color: #17a2b8;
     color: white;
     border-radius: 1.25rem;
+    cursor: pointer;
   }
 }
