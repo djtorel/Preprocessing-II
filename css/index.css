@@ -336,3 +336,23 @@ img {
   color: white;
   border-radius: 1.25rem;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+  .home .content-pick .destination {
+    width: 75%;
+  }
+  .home .content-pick .btn {
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 1.25rem;
+  }
+}

@@ -91,5 +91,16 @@
     .btn {
       .btn();
     }
+    @media @mobile {
+      .col(@align: center);
+
+      .destination {
+        width: 75%;
+      }
+
+      .btn {
+        .btn(@bg-color: #17a2b8);
+      }
+    }
   }
 } // home
