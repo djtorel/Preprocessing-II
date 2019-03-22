@@ -27,6 +27,21 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      .col();
+      .text-content {
+        width: 100%;
+        padding: 0;
+      }
+      .img-content {
+        width: 100%;
+        padding-left: 0;
+        img {
+          width: 100%;
+        }
+      }
+    }
   }
 
   .inverse-content {
@@ -41,6 +56,11 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+    }
+    @media @mobile {
+      .img-content {
+        order: 1;
+      }
     }
   }
 
