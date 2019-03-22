@@ -9,7 +9,7 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    .logo {
+    .logo-link {
       text-decoration: none;
       color: black;
     }
@@ -21,6 +21,23 @@
         margin-right: 3rem;
         font-size: 1.6rem;
         text-decoration: none;
+      }
+    }
+  }
+  @media @mobile {
+    padding: 1rem 0;
+    .nav {
+      .col();
+      .logo {
+        align-self: center;
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+      }
+      .links {
+        .row(@justify: space-evenly);
+        .link {
+          margin: 0;
+        }
       }
     }
   }
