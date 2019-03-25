@@ -1,1 +1,34 @@
 // Mixins in here
+// Flex mixin
+.flex(
+@flow: row nowrap;
+@justify: flex-start;
+@align-items: stretch;
+@align-content: stretch
+) {
+  display: flex;
+  flex-flow: @flow;
+  justify-content: @justify;
+  align-items: @align-items;
+  align-content: @align-content;
+}
+
+// Column mixin
+.col(@flow: column nowrap; @justify: flex-start; @align: stretch) {
+  .flex(@flow; @justify; @align);
+}
+// Row mixin
+.row(@flow: row nowrap; @justify: flex-start; @align: stretch) {
+  .flex(@flow; @justify; @align);
+}
+
+// button mixin
+.btn(@bg-color: #008080; @color: white;) {
+  padding: 1rem 0;
+  font-size: 2rem;
+  text-align: center;
+  background-color: @bg-color;
+  color: @color;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
